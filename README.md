@@ -1,6 +1,3 @@
-# Modern Developer Portfolio & Personal Website
-
-> A replica of the craft / Linear-inspired developer portfolio from **[armandev.space](https://www.armandev.space/)**. Built with **Next.js 15 (App Router)**, **React 19**, **Tailwind CSS**, and **Framer Motion**.
 
 ---
 
