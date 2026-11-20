@@ -34,7 +34,7 @@ export const portfolioData = {
   resumeUrl: "/images/resume.pdf",
 
   // Backward-compatibility:
-  avatarImage: "/images/avatar-anime.svg",
+  avatarImage: "/images/anime.jpg",
 
   currentFocus: {
     title: "REA: Reverse Engineer Anything",

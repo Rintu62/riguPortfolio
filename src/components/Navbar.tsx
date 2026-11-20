@@ -3,10 +3,13 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
+import { portfolioData } from "@/data/portfolioData";
 
 export function Navbar() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -38,26 +41,34 @@ export function Navbar() {
        <Link
           href="/"
           className="relative flex size-11 items-center justify-center overflow-hidden rounded-xl border border-neutral-300 dark:border-[#333] bg-surface-raised transition-transform duration-150 hover:scale-95"
->
+        >
           <Image
-            src="/image.png"
-            alt="Rintu Gurujyot"
+            src={portfolioData.avatarAnimeImage || "/images/anime.jpg"}
+            alt={portfolioData.name || "Home"}
             fill
             className="object-cover"
             priority
+            unoptimized
           />
-          </Link>
+        </Link>
 
-          <div className="hidden md:flex items-center gap-5 text-sm font-medium text-content-muted">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="hover:text-content hover:underline transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center gap-5 text-sm font-medium">
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`transition-colors underline-offset-4 ${
+                    isActive
+                      ? "text-black dark:text-white font-semibold underline"
+                      : "text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:underline"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
@@ -78,16 +89,23 @@ export function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden border-b border-dashed border-neutral-300 dark:border-[#272727] bg-surface px-6 py-4 animate-in slide-in-from-top-2">
           <div className="flex flex-col gap-3 text-sm font-medium">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-surface-raised text-content transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`p-2 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-surface-raised text-black dark:text-white font-semibold underline underline-offset-4"
+                      : "text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:bg-surface-raised"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
