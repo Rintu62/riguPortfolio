@@ -180,12 +180,12 @@ export default function ResumePage() {
               <span className="absolute -left-[5px] top-1.5 size-2 rounded-full bg-brand" />
               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                 <h3 className="font-bold text-base text-content">
-                  Bachelor of Technology in Computer Science
+                  Bachelor of Technology in Computer Science and Engineering
                 </h3>
-                <span className="text-xs text-content-muted font-mono">2023 – 2027</span>
+                <span className="text-xs text-content-muted font-mono">2024 – 2028</span>
               </div>
               <p className="text-xs font-semibold text-content-secondary mt-0.5">
-                Amity University
+                Chandigarh Engineering College, Landran Mohali
               </p>
             </div>
           </div>

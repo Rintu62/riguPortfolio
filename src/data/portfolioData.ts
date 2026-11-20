@@ -1,14 +1,19 @@
-export const portfolioData = {
-  // =========================================================================
-  // 1. PERSONAL INFORMATION (EDIT HERE)
-  // =========================================================================
-  name: "Rintu", // <-- Change your display name here (e.g. "Rintu")
-  fullName: "Rintu Kumar",
-  role: "Full Stack web developer",
-  tagline: "A Full Stack web developer.",
-  shortBio: "I build modern, interactive web applications with a strong emphasis on clean UI, Performance, and User Experience.",
-  email: "rintu6287@gmail.com",
+// export const portfolioData = {
+//   // =========================================================================
+//   // 1. PERSONAL INFORMATION (EDIT HERE)
+//   // =========================================================================
+//   name: "Rintu", // <-- Change your display name here (e.g. "Rintu")
+//   fullName: "Rintu Kumar",
+//   role: "Full Stack web developer",
+//   tagline: "A Full Stack web developer.",
+//   shortBio: "I build modern, interactive web applications with a strong emphasis on clean UI, Performance, and User Experience.",
+//   email: "rintu6287@gmail.com",
   
+
+// yaha se upar ka sara  line 1 to 10 tak comments hain  including 13 tak only 
+
+
+
   // =========================================================================
   // 3 IMAGES CONFIGURATION (YAHAN APNI 3 IMAGES SET KAREIN):
   // Folder: D:\portfolio design rintu\public\images\
