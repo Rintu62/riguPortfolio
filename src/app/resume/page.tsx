@@ -117,7 +117,7 @@ export default function ResumePage() {
               </span>
               <span className="flex items-center gap-1.5">
                 <Globe className="size-3.5 text-content-muted" />
-                https://rigu.spaceX
+                https://riguportfolio.onrender.com/
               </span>
               <span className="flex items-center gap-1.5">
                 <Github className="size-3.5 text-content-muted" />
@@ -180,7 +180,7 @@ export default function ResumePage() {
               <span className="absolute -left-[5px] top-1.5 size-2 rounded-full bg-brand" />
               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                 <h3 className="font-bold text-base text-content">
-                  Bachelor of Technology in Computer Science and Engineering
+                  Bachelor of Technology in Computer Science Engineering
                 </h3>
                 <span className="text-xs text-content-muted font-mono">2024 – 2028</span>
               </div>
