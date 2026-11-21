@@ -8,11 +8,6 @@
    cd "D:\portfolio design rintu"
    ```
 
-2. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
 3. Open your browser and visit:
    ```
    http://localhost:3000
