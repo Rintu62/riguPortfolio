@@ -236,7 +236,7 @@ export const portfolioData = {
     { name: "rishu", url: "", image: "" },
     { name: "ridham", url: "", image: "" },
     { name: "shubham", url: "", image: "" },
-    { name: "yashika", url: "", image: "" },
+    { name: "yashika", url: "", image: "Unmutable" },
   ],
 
   quote: {
