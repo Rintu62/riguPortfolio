@@ -2,7 +2,7 @@ export const portfolioData = {
   // =========================================================================
   // 1. PERSONAL INFORMATION (EDIT HERE)
   // =========================================================================
-  name: "Rintu", // <-- Change your display name here (e.g. "Rintu")
+  name: "Rintu", 
   fullName: "Rintu Kumar",
   role: "Full Stack web developer",
   tagline: "A Full Stack web developer.",
