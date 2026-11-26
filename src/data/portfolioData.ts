@@ -240,8 +240,8 @@ export const portfolioData = {
   ],
 
   quote: {
-    text: "If you never want to be criticized, don't do anything new.",
-    author: "Jeff Bezos",
+    text: "break limmmittt.",
+    author: "---",
   },
   calLink: "https://cal.com",
 };
